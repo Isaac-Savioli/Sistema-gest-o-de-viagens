@@ -1,0 +1,130 @@
+body {
+    background-color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #091c3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    z-index: 10;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #091c3b;
+}
+
+nav li ul {
+    position: absolute;
+    display: none;
+    background-color: #091c3b;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {
+    margin: 0%;
+}
+
+nav li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav li ul li a:hover {
+    background-color: #133772;
+}
+
+nav li ul hr {
+    border: 1px solid #bbbbbb;
+    margin: 5px 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: #3b3b3b;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.container{
+    padding: 20px; 
+}
+
+.card-custom {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.card-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-custom {
+    width: 106px; 
+    height: 100px; 
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit; 
+}

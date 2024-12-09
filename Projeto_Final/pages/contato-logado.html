@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Boreal</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="icon" href="../img/icon-logo (3).png">
+</head>
+<body>
+        <!--navbar-->
+        <nav>
+            <div>
+              <a class="navbar-brand" href="../pages/inicial.html">
+                <img src="../img/Logo(3).png" alt="Bootstrap" />
+              </a>
+            </div>
+            <ul>
+              <li><a href="../pages/inicial.html">Home</a></li>
+            </ul>
+            <div class="dropdown">
+              <li>
+                <a href="../index.html"> Sair </a>
+                </div>
+              </li>
+            </div>
+          </nav>
+
+  <header class="header">
+    <h1>Entre em Contato com a Boreal</h1>
+    <p>Estamos aqui para ajudá-lo com qualquer dúvida ou informação.</p>
+  </header>
+
+  <section class="contato">
+    <div class="contato-info">
+      <h2>Informações de Contato</h2>
+      <p><strong>Email:</strong> contato@borealviagens.com</p>
+      <p><strong>Telefone:</strong> (11) 1234-5678</p>
+      <p><strong>Endereço:</strong> Av. das Viagens, 123, São Paulo - SP</p>
+      <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+    </div>
+
+    <div class="formulario-container">
+      <h2>Envie uma Mensagem</h2>
+      <form class="formulario-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+    <button id="backToTopBtn" title="Voltar ao topo"> <img src="../img/seta-cima.png" alt="seta" class="seta"></button>
+    <script src="../js/script.js"></script>
+</body>
+</html>

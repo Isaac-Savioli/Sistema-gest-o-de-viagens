@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boreal - Administradores</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="icon" href="../img/icon-logo (3).png">
+</head>
+<body>
+        <!--navbar-->
+        <nav>
+            <div>
+              <a class="navbar-brand" href="../pages/inicial-adm.html">
+                <img src="../img/Logo(3).png" alt="Bootstrap" width="" height="" />
+              </a>
+            </div>
+            <ul>
+                <li><a href="../pages/inicial-adm.html">Home</a></li>
+                <li><a href="../pages/dashboard.html">Dashboard</a></li>
+                <li><a href="../pages/gestao-passagens.html">Gestão de Passagens</a></li>
+            </ul>
+            <div class="dropdown">
+              <li>
+                <a href="../index.html"> Sair </a>
+                </div>
+              </li>
+            </div>
+        </nav>
+
+<header>
+    <h1>Gerenciamento de Administradores</h1>
+</header>
+
+<div class="container">
+    <div class="buttons-container">
+        <button class="exporta" aria-label="Exportar lista de administradores">⬆️ Exportar</button>
+        <button class="adicionar" aria-label="Adicionar novo administrador">➕ Adicionar</button>
+    </div>
+    <button class="filtros" aria-label="Adicionar filtros para a tabela">🔍 Adicionar filtros</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Usuário</th>
+                <th>Ativo</th>
+                <th>Permissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="ID">8</td>
+                <td data-label="Nome">Luis Otávio</td>
+                <td data-label="Usuário">admboreal4</td>
+                <td data-label="Ativo">Sim</td>
+                <td data-label="Permissão">
+                    <select name="permissao_1">
+                        <option>nenhuma selecionado</option>
+                        <option>editar</option>
+                        <option>visualizar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="ID">3</td>
+                <td data-label="Nome">Isaac Terence</td>
+                <td data-label="Usuário">admboreal3</td>
+                <td data-label="Ativo">Sim</td>
+                <td data-label="Permissão">
+                    <select name="permissao_2">
+                        <option>nenhuma selecionado</option>
+                        <option>editar</option>
+                        <option>visualizar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="ID">9</td>
+                <td data-label="Nome">João Pinto</td>
+                <td data-label="Usuário">admboreal2</td>
+                <td data-label="Ativo">Não</td>
+                <td data-label="Permissão">
+                    <select name="permissao_3">
+                        <option>nenhuma selecionado</option>
+                        <option>editar</option>
+                        <option>visualizar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="ID">1</td>
+                <td data-label="Nome">Laura Menezes</td>
+                <td data-label="Usuário">admboreal1</td>
+                <td data-label="Ativo">Sim</td>
+                <td data-label="Permissão">
+                    <select name="permissao_4">
+                        <option>nenhuma selecionado</option>
+                        <option>editar</option>
+                        <option>visualizar</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>
+      Este site foi desenvolvido como parte do aprendizado dos alunos do Curso
+      Técnico em Desenvolvimento de Sistemas SENAI/SESI - 2024
+    </p>
+  </footer>
+</body>
+</html>

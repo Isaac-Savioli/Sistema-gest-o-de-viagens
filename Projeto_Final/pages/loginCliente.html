@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="icon" href="../img/icon-logo (3).png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="/img/logo (2).png" alt="logo" /></a>
+      </div>
+      <h1>Cliente</h1>
+      <div class="login-form">
+        <p><b>Seja bem-vindo(a)</b> à Boreal!</p>
+        <p>Nossa missão é fazer dos seus sonhos de viagem uma realidade.</p>
+        <input type="text" id="username" placeholder="Usuário" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="button" onclick="validatePassword()">Entrar</button>
+      </div>
+      <a href="../pages/recuperar-senha.html" class="senha2"
+        >Esqueceu a senha?</a
+      >
+      <br />
+      <a href="../pages/cad.html" class="login-form"
+        ><button type="button" class="conta">Crie sua conta</button></a
+      >
+    </div>
+    <script src="../js/loginCliente.js"></script>
+  </body>
+</html>

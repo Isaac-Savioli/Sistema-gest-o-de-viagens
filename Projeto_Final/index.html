@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boreal</title>
+  </head>
+  <link rel="stylesheet" href="./css/Style.css" />
+  <link rel="icon" href="./img/icon-logo (3).png" />
+  <body>
+    <!--navbar-->
+
+    <nav>
+      <div>
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/Logo(3).png" alt="Bootstrap" width="" height="" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li>
+          <a href="./pages/contato-deslogado.html" target="_blank">Contato</a>
+        </li>
+        <li><a href="#quem-somos">Quem somos ?</a></li>
+      </ul>
+      <div class="dropdown">
+        <li>
+          <a href="#"> Login </a>
+          <ul class="dropdown-menu">
+            <li><a href="./pages/loginCliente.html">Cliente</a></li>
+            <li><a href="./pages/loginAdm.html">Funcionário</a></li>
+            <li><hr /></li>
+          </ul>
+        </li>
+      </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner-container" id="home">
+      <img src="./img/Banner.png" alt="banner" class="banner-img" />
+      <div class="banner-text">
+        <h1>Explore o Mundo com Conforto</h1>
+        <p>Reserve já a sua próxima aventura!</p>
+      </div>
+    </div>
+
+    <!-- Formulário de Reservas -->
+    <div class="reserva1">
+      <section class="reservation-section" id="reservas">
+        <div class="reservation-tabs">
+          <button class="active" data-tab="flights">Reservas</button>
+        </div>
+
+        <div class="reservation-content">
+          <form id="flights" class="reservation-form active">
+            <div class="form-group">
+              <select>
+                <option>Ida e Volta</option>
+                <option>Somente Ida</option>
+                <option>Multidestinos</option>
+              </select>
+              <select>
+                <option>Econômica</option>
+                <option>Trabalho</option>
+                <option>Primeira Classe</option>
+              </select>
+              <select>
+                <option>1 Passageiro</option>
+                <option>2 Passageiros</option>
+                <option>3 Passageiros</option>
+                <option>+4 Passageiros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Origem" />
+              <input type="text" placeholder="Destino" />
+              <input type="date" placeholder="Ida" />
+              <input type="date" placeholder="Volta" disabled />
+              <button type="submit" class="btn-primary">Procurar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!--cards-->
+    <div class="destinos" id="destinos">
+      <h3>Destinos</h3>
+    </div>
+    <section class="cards-container">
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/Catedral de Colônia.jpg" alt="Imagem 1" />
+          <h3>Alemanha</h3>
+          <p>
+            A Alemanha é um destino turístico vibrante, com uma rica história,
+            cultura diversificada e paisagens deslumbrantes. É famosa por seus
+            castelos de conto de fadas, museus de renome mundial, cervejarias
+            tradicionais e a Oktoberfest. Sua gastronomia variada, como chucrute
+            e pretzels.
+          </p>
+        </div>
+        <a href="./pages/saiba-mais-alemanha-deslogado.html">Saiba mais...</a>
+      </div>
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/ru1.png" alt="imagem2" />
+          <h3>Rússia</h3>
+          <p>
+            Desde as metrópoles cosmopolitas como Moscou e São Petersburgo, com
+            seus palácios imponentes e catedrais ornamentadas, até a vasta
+            extensão da Sibéria, com sua natureza selvagem e a aurora boreal, a
+            Rússia oferece uma experiência única para cada viajante.
+          </p>
+        </div>
+        <a href="./pages/saiba-mais-ru-deslogado.html">Saiba mais...</a>
+      </div>
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/ita1.jpg" alt="imagem3" />
+          <h3>Itália</h3>
+          <p>
+            Com uma rica história, arte e cultura, o país oferece uma
+            experiência única para todos os gostos. Desde as cidades históricas
+            como Roma e Florença, com seus monumentos icônicos e obras de arte
+            renascentistas, até as charmosas vilas costeiras, ainda contendo as
+            paisagens deslumbrantes.
+          </p>
+        </div>
+        <a href="./pages/saiba-mais-ita-deslogado.html">Saiba mais...</a>
+      </div>
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/pequim.jpg" alt="imagem4" />
+          <h3>China</h3>
+          <p>
+            A Muralha da China, a Cidade Proibida e o Exército de Terracota são
+            apenas alguns dos muitos marcos históricos que fascinam turistas do
+            mundo inteiro. A culinária diversificada e a hospitalidade do povo
+            completam a experiência única de viajar por este país.
+          </p>
+        </div>
+        <a href="#">Saiba mais...</a>
+      </div>
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/Santorini.jpg" alt="imagem5" />
+          <h3>Grécia</h3>
+          <p>
+            Desde as ruínas da Acrópole de Atenas, um dos monumentos mais
+            importantes da antiguidade, até as paradisíacas ilhas de Santorini e
+            Mykonos, com suas praias de areia branca, vilas pitorescas e águas
+            cristalinas, a Grécia tem tudo para encantar. Sua gastronomia e
+            cultura tornam a experiência única.
+          </p>
+        </div>
+        <a href="#">Saiba mais...</a>
+      </div>
+      <div class="card">
+        <div class="grayscale-transition">
+          <img src="./img/monte-fuji.jpeg" alt="imagem6" />
+          <h3>Japão</h3>
+          <p>
+            O Japão, a terra do sol nascente, é um destino turístico que encanta
+            milhões de visitantes anualmente. Com uma rica cultura milenar,
+            paisagens deslumbrantes e uma infraestrutura moderna, o país oferece
+            uma experiência única para todos os gostos. Há muito para descobrir.
+          </p>
+        </div>
+        <a href="#">Saiba mais...</a>
+      </div>
+    </section>
+    <!--fim dos cards-->
+
+    <!--mini banner-->
+    <div class="banner-container">
+      <img src="./img/mini-banner (2).png " alt="banner" class="mini-banner" />
+    </div>
+
+    <!--Dicas-->
+    <div class="dicas1">
+      <div class="dicas" id="dicas">
+        <h3>Dicas para a sua viagem</h3>
+        <p>Confira as principais dicas para ter uma viagem inesquecível.</p>
+      </div>
+    </div>
+    <section class="cards-container-dicaEfeedback">
+      <div class="card-dicas">
+        <img src="./img/dica1.png" alt="dica1" />
+        <h3>1 - Planeje com antecedência</h3>
+        <p>
+          Pesquise sobre o destino, crie um roteiro e compre ingressos com
+          antecedência para evitar imprevistos.
+        </p>
+      </div>
+      <div class="card-dicas">
+        <img src="./img/dica2.png" alt="dica2" />
+        <h3>2 - Escolha a melhor época</h3>
+        <p>
+          Verifique a melhor época para viajar ao seu destino e evitar clima
+          ruim ou grandes multidões.
+        </p>
+      </div>
+      <div class="card-dicas">
+        <img src="./img/dica3.png" alt="dica3" />
+        <h3>3 - Leve um seguro viagem</h3>
+        <p>
+          Um seguro viagem pode salvar a sua viagem em caso de emergências, como
+          acidentes ou perda de bagagem.
+        </p>
+      </div>
+    </section>
+
+    <!--Feedbacks-->
+    <div class="feedback" id="feedback">
+      <h3>O que as pessoas estão comentando...</h3>
+    </div>
+    <section class="cards-container-dicaEfeedback">
+      <div class="card-feedback">
+        <img
+          src="./img/foto-pessoa1.webp"
+          alt="foto-pessoa1"
+          class="img-feedback"
+        />
+        <h3>João Silva</h3>
+        <p>⭐️⭐️⭐️⭐️⭐️</p>
+        <p>
+          "A viagem para a Itália foi incrível! A agência fez todo o
+          planejamento e tivemos uma experiência maravilhosa. Super recomendo!"
+        </p>
+      </div>
+      <div class="card-feedback">
+        <img
+          src="./img/foto-pessoa2.jpeg"
+          alt="foto-pessoa2"
+          class="img-feedback"
+        />
+        <h3>Ana Souza</h3>
+        <p>⭐️⭐️⭐️⭐️⭐️</p>
+        <p>
+          "Fui para o Japão e a organização foi impecável. Tudo correu conforme
+          o planejado e as dicas dadas foram fundamentais para uma viagem
+          tranquila."
+        </p>
+      </div>
+      <div class="card-feedback">
+        <img
+          src="./img/foto-pessoa3.webp"
+          alt="foto-pessoa3"
+          class="img-feedback"
+        />
+        <h3>Lucas Costa</h3>
+        <p>⭐️⭐️⭐️⭐️⭐️</p>
+        <p>
+          "A Grécia é um destino maravilhoso! A equipe de atendimento foi super
+          prestativa e a viagem foi excelente, com ótimas sugestões de
+          passeios."
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção "Quem Somos" -->
+    <section class="quem-somos" id="quem-somos">
+      <h2>Quem Somos...</h2>
+      <div class="cards-container">
+        <div class="card-quem-somos">
+          <img src="./img/valores.png" alt="Valores Boreal" />
+          <h3>Nossos Valores</h3>
+          <p>
+            Na Boreal, acreditamos em proporcionar experiências memoráveis, com
+            ética, respeito e compromisso com nossos clientes. Cada viagem é
+            planejada com paixão e cuidado.
+          </p>
+        </div>
+
+        <div class="card-quem-somos">
+          <img src="./img/missao.png" alt="Missão Boreal" />
+          <h3>Nossa Missão</h3>
+          <p>
+            Conectar pessoas a destinos únicos, promovendo a cultura e a
+            sustentabilidade. Trabalhamos para tornar cada jornada uma
+            experiência inesquecível e acessível.
+          </p>
+        </div>
+        <div class="card-quem-somos">
+          <img src="./img/diferencial .png" alt="Diferenciais Boreal" />
+          <h3>Nossos Diferenciais</h3>
+          <p>
+            Atendimento personalizado, suporte 24/7 e parcerias com os melhores
+            fornecedores do mundo. Com a Boreal, sua viagem está sempre em boas
+            mãos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Este site foi desenvolvido como parte do aprendizado dos alunos do Curso
+        Técnico em Desenvolvimento de Sistemas SENAI/SESI - 2024
+      </p>
+    </footer>
+    <button id="backToTopBtn" title="Voltar ao topo">
+      <img src="./img/seta-cima.png" alt="seta" class="seta" />
+    </button>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

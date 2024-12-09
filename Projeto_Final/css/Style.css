@@ -1,0 +1,518 @@
+body{
+  background-color: ghostwhite;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #091c3b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  z-index: 10;
+  position: relative; 
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  max-height: 64px;
+  max-width: 64px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #091c3b;
+}
+
+
+.dropdown { 
+  position: relative; 
+  margin-right: 40px; 
+  
+}
+
+.dropdown li {
+  position: relative; 
+  display: inline-block; 
+}
+
+.dropdown li ul {
+  position: absolute;
+  display: none;
+  background-color: #091c3b;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  top: 100%; 
+  left: 0; 
+  
+}
+
+.dropdown li:hover ul {
+  display: block;
+}
+
+.dropdown li ul li {
+  margin: 0%;
+}
+
+.dropdown li ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown li ul li a:hover {
+  background-color: #133772;
+}
+
+.dropdown li ul hr {
+  border: 1px solid #bbbbbb;
+  margin: 5px 10px;
+}
+  
+  
+  nav li ul {
+    position: absolute;
+    display: none;
+    background-color: #091c3b;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+  }
+  
+  nav li:hover ul {
+    display: block;
+  }
+  
+  nav li ul li {
+    margin: 0%;
+  }
+  
+  nav li ul li a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  nav li ul li a:hover {
+    background-color: #133772;
+  } 
+  
+  nav li ul hr {
+    border: 1px solid #bbbbbb;
+    margin: 5px 10px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*main*/
+
+
+/*banner*/
+.banner-container {
+  position: relative; 
+  width: 100%; 
+  height: auto;
+  z-index: 1;
+}
+
+.banner-img{
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: white; 
+  font-family: Arial, sans-serif; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/*form-reservas*/
+.reserva1{
+display: flex;
+justify-content: center;
+margin-top: -40px;
+}
+
+.reservation-section {
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(226, 226, 226, 1.0); 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2; 
+}
+
+.reservation-tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.reservation-tabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.reservation-tabs button.active {
+  font-weight: bold;
+  color: #133772;
+  border-bottom: 2px solid #133772;
+}
+
+.reservation-content .reservation-form {
+  display: none;
+}
+
+.reservation-content .reservation-form.active {
+  display: block;
+}
+
+.reservation-form .form-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 7px;
+}
+
+.reservation-form select,
+.reservation-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+}
+
+.reservation-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #091c3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.reservation-form button:hover {
+  background-color: #133772;
+}
+
+/*Dicas e feedback*/
+
+.dicas1{
+  display: flex;
+  justify-content: center;
+}
+
+.dicas {
+  margin-top: 100px;
+  background-color: ghostwhite;
+  display: grid; 
+  place-items: center;
+  color: #174288;
+  font-size: 30px;
+}
+
+
+.feedback{
+  margin-top: 100px;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  color: #174288;
+  font-size: 35px;
+}
+
+
+.cards-container-dicaEfeedback{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: ghostwhite;
+}
+
+.card-dicas, .card-feedback{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f8f8ff;
+  flex: 1 1 calc(33.333% - 20px); 
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2 ease-in-out;
+  flex-direction: column;
+}
+
+.card-dicas h3, .card-feedback h3{
+margin-top: 5px;
+font-size: 22px;
+text-align: center;
+color: #174288;
+padding: 12px;
+}
+
+.card-dicas img, .card-feedback img{
+  margin-top: 5px;
+  width: 20%;
+  height: auto;
+}
+.img-feedback{
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+.card-dicas p, .card-feedback p{
+  font-size: 16px;
+  margin: 0 15px 20px;
+  color: #484848;
+}
+
+/*destinos*/
+.destinos{
+  margin-top: 180px;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  color: #174288;
+  font-size: 35px;
+}
+
+/*configuration of containers for all cards*/
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    background-color: ghostwhite;
+}
+
+
+/*card style*/
+
+.card{
+    background-color:ghostwhite;
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2 ease-in-out;
+}
+
+.card h3{
+  margin-top: 5px;
+  font-size: 22px;
+  text-align: center;
+  padding: 12px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grayscale-transition {
+  filter: grayscale(70%);
+  transition: filter 1.5s ease;
+}
+
+.grayscale-transition:hover {
+  filter: grayscale(0%);
+}
+
+
+.card p{
+    font-size: 16px;
+    margin: 0 15px 20px;
+    color: #484848;
+}
+
+.card a{
+    display: block;
+    text-align:center;
+    margin-top: 0 15px 15px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #091c3b;
+    color: white;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+.card a:hover{
+    background-color: #133772;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+ /*mini banner*/
+
+.mini-banner{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.quem-somos {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.quem-somos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #174288;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-quem-somos {
+  background-color:ghostwhite;
+  flex: 1 1 calc(33.333% - 20px);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2 ease-in-out;
+}
+
+.card-quem-somos img {
+  margin-top: 10px;
+  width: 20%;
+  height: auto; 
+}
+
+.card-quem-somos h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #0066cc;
+  padding: 12px;
+}
+
+.card-quem-somos p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+
+  footer {
+    background-color: #3b3b3b; 
+    padding: 10px;
+    color: white;
+    text-align: center; 
+  }
+
+  .seta{
+    width: 40px;
+    height: auto;
+  }
+
+  #backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    border: none;
+    background-color: #091c3b; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100; 
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #133772;
+  }
+  
+
+  #backToTopBtn.show {
+    display: block;
+  }
